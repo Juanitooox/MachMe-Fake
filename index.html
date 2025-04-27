@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachMe</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <h1>MachMe</h1>
+        <p>Conecta, descubre y encuentra tu match</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="app-content" style="display:none;">
+        <!-- Menú de navegación -->
+        <div id="menu">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#favorites">Favoritos</a></li>
+                <li><a href="#search">Buscar</a></li>
+                <li><a href="#info">Info</a></li>
+            </ul>
+        </div>
+
+        <!-- Filtros y Buscador -->
+        <div id="filters">
+            <input type="text" id="search-input" placeholder="Buscar por nombre...">
+            <select id="city-filter">
+                <option value="">Filtrar por ciudad</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Medellín">Medellín</option>
+                <option value="Cali">Cali</option>
+                <option value="Cartagena">Cartagena</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Bucaramanga">Bucaramanga</option>
+            </select>
+        </div>
+
+        <!-- Listado de Perfiles -->
+        <div id="profiles-list"></div>
+    </div>
+
+    <script src="js/splash.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/favorites.js"></script>
+</body>
+</html>
