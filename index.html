@@ -18,17 +18,17 @@
         <!-- Menú de navegación -->
         <div id="menu">
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#favorites">Favoritos</a></li>
-                <li><a href="#search">Buscar</a></li>
-                <li><a href="#info">Info</a></li>
-            </ul>
-        </div>
+                <li><a href="#" id="btn-inicio">Inicio</a></li>
+                <li><a href="#" id="btn-favoritos">Favoritos</a></li>
+                <li><a href="#" id="btn-busqueda">Buscar</a></li>
+                <li><a href="#" id="btn-info">Info</a></li>
 
+            </ul>
+        
         <!-- Filtros y Buscador -->
-        <div id="filters">
-            <input type="text" id="search-input" placeholder="Buscar por nombre...">
-            <select id="city-filter">
+        <div id="Filtros">
+            
+            <select id="filtro_ciudad">
                 <option value="">Filtrar por ciudad</option>
                 <option value="Bogotá">Bogotá</option>
                 <option value="Medellín">Medellín</option>
@@ -40,14 +40,16 @@
         </div>
 
         <!-- Listado de Perfiles -->
-        <div id="profiles-list"></div>
+        <div id="lista_perfiles"></div>
     </div>
+  
+
 
     <script src="js/splash.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/filter.js"></script>
     <script src="js/api.js"></script>
-    <script src="js/favorites.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/busqueda.js"></script>
+    <script src="js/filtro.js"></script>
+    <script src="js/navegacion.js"></script>
 </body>
 </html>

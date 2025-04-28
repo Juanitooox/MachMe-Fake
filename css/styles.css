@@ -1,7 +1,7 @@
 /* General */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: #ffff;
     color: #000;
     margin: 0;
     padding: 0;
@@ -29,6 +29,9 @@ body {
 
 /* Menu de navegación */
 #menu ul {
+    position: fixed; /*hace que el menu este abajo de todo*/
+    bottom: 0; /*si no es suficiente esto hace que asegure que va a estar por alla abajo*/
+    width: 100%; /*para que ocupe todo el ancho*/
     display: flex;
     justify-content: space-around;
     background-color: #c2185b;
@@ -48,28 +51,28 @@ body {
 }
 
 /* Filtros */
-#filters {
+#filtro {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
 }
 
-#filters input, #filters select {
+#filtro input, #filtro select {
     padding: 10px;
     font-size: 1em;
     border: 1px solid #ccc;
 }
 
 /* Perfiles */
-#profiles-list {
+#lista_perfiles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 10px;
 }
 
-.profile-card {
+.carta_perfil {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 15px;
@@ -78,15 +81,56 @@ body {
     text-align: center;
 }
 
-.profile-card img {
+.carta_perfil img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
 }
 
-.profile-card h3 {
+.carta_perfil h3 {
     margin: 10px 0;
     font-size: 1.2em;
     color: #c2185b;
+}
+
+.carta_perfil .btn-favorite:hover{
+    background-color: #da3b78;
+}
+
+/* Contenedor de la barra de búsqueda */
+.buscar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+/* Estilo para la barra de búsqueda (input) */
+.input_busqueda {
+    width: 90%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+/* Estilo para el botón de búsqueda */
+.btn_buscar {
+    background-color: transparent;
+    border: none;
+    color: #888;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn_buscar:hover {
+    color: #ff4081;
 }
